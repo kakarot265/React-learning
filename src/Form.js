@@ -25,6 +25,7 @@ const Form = () =>{
     const handleSubmit = (e) =>{
         e.preventDefault();
         if(person.firstName && person.email && person.age){
+          //Here setPeople or setState in general is for setting the state of the variable associated to the fxn.
           setPeople((people)=>{
             const newPerson = {id: new Date().getTime().toString(), firstName: person.firstName, email: person.email, age:person.age}
             return [...people, newPerson]

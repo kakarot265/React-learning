@@ -7,7 +7,7 @@ const initialState = {
 }
 
 function reducer(state, action){
-    console.lof(state, action)
+    console.log(state, action)
 
     switch(action.type){
         case 'FETCH_DATA_START':
